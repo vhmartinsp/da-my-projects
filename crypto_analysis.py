@@ -66,13 +66,13 @@ yahoo_crypto_df.drop(columns = ['52 Week Range'], inplace=True)
 yahoo_crypto_df.drop(columns = ['Day Chart'], inplace=True)
 
 yahoo_crypto_df['price_day'] = yahoo_crypto_df['price_day'].str.replace(',', '')  # Remover a vírgula
-yahoo_crypto_df['price_day'] = yahoo_crypto_df['price_day'].astype(float) #Converte para float
-yahoo_crypto_df['change_percent'] = pd.to_numeric(yahoo_crypto_df['change_percent'], errors='coerce')  #Converte para valores numéricos 
+yahoo_crypto_df['price_day'] = yahoo_crypto_df['price_day'].astype(float) # Converte para float
+yahoo_crypto_df['change_percent'] = pd.to_numeric(yahoo_crypto_df['change_percent'], errors='coerce')  # Converte para valores numéricos 
 
 filtered_df = yahoo_crypto_df.query('change_percent > 0.00')
 
 
-# %% Plotar o gráfico de dispersão com a escala de cores aplicada pela coluna "change_percent"
+# %% Plotar o gráfico de dispersão com a escala de cores de acordo com o nome da criptomoeda
 sns.scatterplot(data=filtered_df, x="price_day", y="change_percent", hue="name", palette="Set2", alpha=1.0)
 
 # Adicionar rótulos aos eixos
