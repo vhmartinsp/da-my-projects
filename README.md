@@ -21,9 +21,12 @@ Máquina Local
 5. O gráfico interativo será exibido na interface gráfica usando as bibliotecas seaborn e matplotlib.
 
 Google Colab
-1. Faça o download do crypto_analysis.ipynb para seu ambiente no Google Drive.
-2. Conecte o novo ambiente de execução, clicando no botão conectar no canto superior direito do Google Colab.
-3. Execute cada célula.
+1. Faça o download do crypto_analysis.ipynb para seu ambiente no Google Drive (clicando no botão de download no canto direito).
+2. Abra o Google Colab, caso tenha conta faça o login, senão faça o cadastro na plataforma.
+3. Clique em arquivo no canto superior esquerdo e então vá em "Fazer upload de Notebook.
+4. Navegue até o diretório onde o notebook foi baixado e então faça o upload dele.
+5. Conecte o novo ambiente de execução, clicando no botão conectar no canto superior direito do Google Colab.
+6. Execute cada célula.
 
 ## Observações
 
@@ -48,11 +51,20 @@ This is a project focused on collecting data and analyzing information about cry
 
 ## How to Use
 
+Local Machine
 1. Clone this repository to your local machine.
 2. Install the necessary libraries listed in the `requirements.txt` file using the command: `pip install -r requirements.txt`.
 3. Run the main script `crypto_analysis.py` to start collecting data and generating graphs.
 4. The generated DataFrame will be available for analysis and manipulation in the code.
 5. The interactive graph will be displayed in the graphical interface using the `seaborn` and `matplotlib` libraries.
+
+Google Colab
+1. Download crypto_analysis.ipynb to your environment from Google Drive (by clicking the download button in the right corner).
+2. Open Google Colab, if you have an account log in, otherwise register on the platform.
+3. Click on file in the top left corner and then go to "Upload from Notebook.
+4. Navigate to the directory where the notebook was downloaded and then upload it.
+5. Connect the new runtime environment by clicking the connect button in the top right corner of Google Colab.
+6. Run each cell.
 
 ## Remarks
 
