@@ -67,22 +67,24 @@ yahoo_crypto_df['price_day'] = yahoo_crypto_df['price_day'].astype(float) #Conve
 yahoo_crypto_df['change_percent'] = pd.to_numeric(yahoo_crypto_df['change_percent'], errors='coerce')  #Converte para valores numéricos 
 
 filtered_df = yahoo_crypto_df.query('change_percent > 0.00')
+
 # %%
-
 # Plotar o gráfico de dispersão com a escala de cores aplicada pela coluna "change_percent"
-
-sns.scatterplot(data=filtered_df, x="price_day", y="change_percent", hue="name", palette="viridis", alpha=0.7)
+sns.scatterplot(data=filtered_df, x="price_day", y="change_percent", hue="name", palette="Set2", alpha=1.0)
 
 # Adicionar rótulos aos eixos
 plt.title("Relação entre variação percentual e o preço do dia por crypto")
 plt.xlabel('Preço do Dia')
 plt.ylabel('Variação Percentual')
 plt.legend(title="Nome da moeda")
-
-
-# Exibir o gráfico  
-plt.show()
+#%%
 
 
 
-# %%
+
+
+
+
+
+
+
