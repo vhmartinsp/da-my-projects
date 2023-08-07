@@ -72,14 +72,25 @@ yahoo_crypto_df['change_percent'] = pd.to_numeric(yahoo_crypto_df['change_percen
 filtered_df = yahoo_crypto_df.query('change_percent > 0.00')
 
 
-# %% Plotar o gráfico de dispersão com a escala de cores de acordo com o nome da criptomoeda
-sns.scatterplot(data=filtered_df, x="price_day", y="change_percent", hue="name", palette="Set2", alpha=1.0)
+# Adicionar rótulos aos eixos do gráfico
+plt.figure(figsize=(11, 6))
+plt.scatter(filtered_df['market_value'], filtered_df['change_percent'], color='green', alpha=0.7)
+plt.xlabel('Valor de Mercado')
+plt.ylabel('Mudança Percentual')
+plt.title('Relação entre Mudanças Percentuais Positivas e Valor de Mercado')
+plt.grid(True)
+plt.tight_layout()
 
-# Adicionar rótulos aos eixos
-plt.title("Relação entre variação percentual e o preço do dia por crypto")
-plt.xlabel('Preço do Dia')
-plt.ylabel('Variação Percentual')
-plt.legend(title="Nome da moeda")
+# O laço for permitirá  iterar sobre as linhas do DataFrame, retornando o índice da linha (i) e os dados da linha (row) em cada iteração.
+for i, row in filtered_df.iterrows():
+    plt.annotate(row['name'], (row['market_value'], row['change_percent']),
+                 textcoords="offset points", xytext=(0,8), ha='center')
+    
+# Inverter o eixo x para exibir em ordem crescente, pois o Matplotlib escolhe automaticamente a escala e os limites dos eixos e nesse caso o gráfico viria com o eixo x de forma decrescente.
+plt.gca().invert_xaxis()
+
+#Faz a exibição do gráfico 
+plt.show()
 #%%
 
 
