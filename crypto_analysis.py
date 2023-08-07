@@ -1,12 +1,13 @@
 #%%
+import re
+from bs4 import BeautifulSoup
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
 import requests
 from requests.exceptions import HTTPError
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-from bs4 import BeautifulSoup
-import re
-from pathlib import Path
 
 
 #%%
