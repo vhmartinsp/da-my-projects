@@ -1,7 +1,3 @@
----
-remote_theme: pages-themes/minimal@v0.2.0
----
-
 # Projeto de Web Crawling e Scraping para Análise de Criptomoedas no Yahoo Finance
 
 Este é um projeto focado na coleta de dados e análise de informações sobre criptomoedas usando as bibliotecas requests, pandas, seaborn, matplotlib, e BeautifulSoup. O principal objetivo é extrair dados relevantes do Yahoo Finance, criar um DataFrame para análise e gerar gráficos interativos que ilustram a relação entre os preços diários e as variações percentuais positivas das criptomoedas.
