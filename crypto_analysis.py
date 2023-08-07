@@ -50,7 +50,7 @@ else:
     print("Tabela não encontrada na página HTML.")
 
 
-# %% Trantando os dados das colunas
+# %% Tratando os dados das colunas
 yahoo_crypto_df.rename(columns={'Symbol': 'symbol'}, inplace=True)
 yahoo_crypto_df.rename(columns={'Name': 'name'}, inplace=True)
 yahoo_crypto_df.rename(columns={'Price (Intraday)': 'price_day'}, inplace=True)
