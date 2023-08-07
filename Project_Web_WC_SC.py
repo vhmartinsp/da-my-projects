@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import re
 from pathlib import Path
 
+
 #%%
 conteudo = None
 URL = 'https://finance.yahoo.com/crypto/'
@@ -18,7 +19,9 @@ try:
 except HTTPError as exc:
     print(exc)
 else:
-    conteudo = resposta.text
+    conteudo = resposta.text  
+
+
 #%%
 pagina = BeautifulSoup(conteudo, 'html.parser')
 
@@ -68,8 +71,8 @@ yahoo_crypto_df['change_percent'] = pd.to_numeric(yahoo_crypto_df['change_percen
 
 filtered_df = yahoo_crypto_df.query('change_percent > 0.00')
 
-# %%
-# Plotar o gráfico de dispersão com a escala de cores aplicada pela coluna "change_percent"
+
+# %% Plotar o gráfico de dispersão com a escala de cores aplicada pela coluna "change_percent"
 sns.scatterplot(data=filtered_df, x="price_day", y="change_percent", hue="name", palette="Set2", alpha=1.0)
 
 # Adicionar rótulos aos eixos
