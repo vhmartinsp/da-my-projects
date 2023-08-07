@@ -1,4 +1,4 @@
-#da-web-crawling_scrappling_crypto
+# da-web-crawling_scrappling_crypto
 
 
 [PT] Eixo x (Preço do Dia): É o preço atual das criptomoedas que foram alteradas em termos percentuais (muitas delas são positivas). Em cada ponto da tabela periódica, há uma criptomoeda diferente e o preço do eixo x representa o preço atual de tal criptomoeda.
