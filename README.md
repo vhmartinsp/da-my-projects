@@ -13,11 +13,17 @@ Este é um projeto focado na coleta de dados e análise de informações sobre c
 
 ## Como Usar
 
+#Máquina Local
 1. Faça o clone deste repositório para sua máquina local.
 2. Instale as bibliotecas necessárias listadas no arquivo `requirements.txt` utilizando o comando: `pip install -r requirements.txt`.
 3. Execute o script principal `crypto_analysis.py` para iniciar a coleta de dados e geração dos gráficos.
 4. O DataFrame gerado estará disponível para análise e manipulação no código.
 5. O gráfico interativo será exibido na interface gráfica usando as bibliotecas seaborn e matplotlib.
+
+#Google Colab
+1. Faça a cópia do crypto_analysis.ipynb para seu ambiente no Google Drive.
+2. Conecte o novo ambiente de execução, clicando no botão conectar no canto superior direito do Google Colab.
+3. Execute cada célula.
 
 ## Observações
 
