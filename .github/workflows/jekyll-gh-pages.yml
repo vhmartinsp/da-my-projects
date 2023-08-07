@@ -8,14 +8,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Install Dependencies
+        run: |
+          gem install bundler
+          bundle install
+
       - name: Build Jekyll Site
         run: |
-          bundle install
           bundle exec jekyll build
 
       - name: Deploy to GitHub Pages
