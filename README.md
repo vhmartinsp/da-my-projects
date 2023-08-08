@@ -21,7 +21,7 @@ Máquina Local
 5. O gráfico interativo será exibido na interface gráfica usando a bibliotecas matplotlib.
 
 Google Colab
-1. Faça o download do crypto_analysis.ipynb para seu ambiente no Google Drive (clicando no botão de download no canto direito).
+1. Faça o download do `crypto_analysis.ipynb` para seu ambiente no Google Drive (clicando no botão de download no canto direito).
 2. Abra o Google Colab, caso tenha conta faça o login, senão faça o cadastro na plataforma.
 3. Clique em arquivo no canto superior esquerdo e então vá em "Fazer upload de Notebook.
 4. Navegue até o diretório onde o notebook foi baixado e então faça o upload dele.
@@ -60,7 +60,7 @@ Local Machine
 5. The interactive graph will be displayed in the graphical interface using the `matplotlib` libraries.
 
 Google Colab
-1. Download crypto_analysis.ipynb to your environment from Google Drive (by clicking the download button in the right corner).
+1. Download `crypto_analysis.ipynb` to your environment from Google Drive (by clicking the download button in the right corner).
 2. Open Google Colab, if you have an account log in, otherwise register on the platform.
 3. Click on file in the top left corner and then go to "Upload from Notebook.
 4. Navigate to the directory where the notebook was downloaded and then upload it.
