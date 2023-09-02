@@ -5,29 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Projeto no GitHub</title>
     <style>
-        /* Resto do seu CSS existente */
+        /* Estilos para o tema claro */
+        .theme-light {
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-        /* Adicione o tema abaixo */
+        /* Estilos para o tema escuro */
         .theme-dark {
             background-color: #111;
             color: #fff;
         }
 
-        .theme-light {
-            background-color: #fff;
-            color: #111;
-        }
+        /* Resto do seu CSS existente */
 
-        /* Estilos para alternar entre os temas */
-        .theme-toggle {
-            cursor: pointer;
-            padding: 5px;
-            background-color: #35424a;
-            color: #fff;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
-<body class="theme-light">
+<body class="theme-light"> <!-- Defina um tema padrão, por exemplo, tema claro -->
     <header>
       <h1>Projeto de Web Crawling e Scraping para Análise de Criptomoedas no Yahoo Finance</h1>
       <p>Projeto de Web Crawling e Scraping para puxar informações de uma tabela presente em HTML assim como retornar ela em um DataFrame com informações úteis, além de um gráfico de dispersão que exibe a correlação entre a variação percentual e o valor de mercado de cada criptomoeda.</p>
