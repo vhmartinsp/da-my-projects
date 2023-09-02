@@ -26,7 +26,7 @@
             text-align: center;
             background-color: #000; /* Cor preta */
             color: #fff;
-            border-radius: 10px 10px 0 0;
+            border-radius: 0; /* Removendo o arredondamento superior */
         }
         header h1 {
             margin: 0;
@@ -71,22 +71,20 @@
         section ul li {
             margin-bottom: 5px;
         }
-        /* Estilos para o cabeçalho infinito */
-        .infinite-header {
-            animation: moveHeader 10s linear infinite;
-        }
-        @keyframes moveHeader {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-100%);
-            }
+        /* Estilos para o cabeçalho fixo */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #000; /* Cor preta */
+            color: #fff;
+            z-index: 999;
         }
     </style>
 </head>
 <body>
-    <header class="infinite-header">
+    <header class="fixed-header">
         <h1>Projeto de Web Crawling e Scraping de Criptomoedas</h1>
         <p>Uma análise de criptomoedas no Yahoo Finance usando técnicas de Web Crawling e Scraping.</p>
     </header>
