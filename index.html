@@ -71,10 +71,22 @@
         section ul li {
             margin-bottom: 5px;
         }
+        /* Estilos para o cabeçalho infinito */
+        .infinite-header {
+            animation: moveHeader 10s linear infinite;
+        }
+        @keyframes moveHeader {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header class="infinite-header">
         <h1>Projeto de Web Crawling e Scraping de Criptomoedas</h1>
         <p>Uma análise de criptomoedas no Yahoo Finance usando técnicas de Web Crawling e Scraping.</p>
     </header>
