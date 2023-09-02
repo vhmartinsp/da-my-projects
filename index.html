@@ -5,56 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Projeto no GitHub</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
+        /* Resto do seu CSS existente */
+
+        /* Adicione o tema abaixo */
+        .theme-dark {
+            background-color: #111;
+            color: #fff;
         }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
+
+        .theme-light {
+            background-color: #fff;
+            color: #111;
         }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        .main-content {
-            padding: 20px;
-        }
-        footer {
-            background: #35424a;
-            color: #ffffff;
-            text-align: center;
-            padding: 10px 0;
+
+        /* Estilos para alternar entre os temas */
+        .theme-toggle {
+            cursor: pointer;
+            padding: 5px;
+            background-color: #35424a;
+            color: #fff;
         }
     </style>
 </head>
-<body>
+<body class="theme-light">
     <header>
       <h1>Projeto de Web Crawling e Scraping para Análise de Criptomoedas no Yahoo Finance</h1>
-      <p>Projeto de Web Crawling e  Scraping para puxar informações de uma tabela presente em HTML assim como retornar ela em um DataFrame com informações úteis, além de um gráfico de dispersão que exibe a correlação entre a variação percentual e o valor de mercado de cada criptomoeda
-. </p>
+      <p>Projeto de Web Crawling e Scraping para puxar informações de uma tabela presente em HTML assim como retornar ela em um DataFrame com informações úteis, além de um gráfico de dispersão que exibe a correlação entre a variação percentual e o valor de mercado de cada criptomoeda.</p>
+      <!-- Adicione um botão ou link para alternar entre os temas -->
+      <div class="theme-toggle" onclick="toggleTheme()">Alternar Tema</div>
     </header>
-    <div class="container">
-        <div class="main-content">
-            <h2>Links</h2>
-            <ul>
-                <li><a href="https://github.com/vhmartinsp/da-web-crawling_scraping_crypto/blob/main/crypto_analysis.ipynb" target="_blank">Ver Código</a>
-                <li><a href="https://github.com/vhmartinsp/da-web-crawling_scraping_crypto/blob/main/README.md" target="_blank">README</a></li>
-            </ul>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2023 Victor Hugo</p>
-    </footer>
+    <!-- Resto do seu HTML existente -->
+
+    <!-- Adicione um script JavaScript para alternar os temas -->
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle("theme-dark");
+            body.classList.toggle("theme-light");
+        }
+    </script>
 </body>
 </html>
