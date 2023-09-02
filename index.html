@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto de Web Crawling e Scraping de Criptomoedas</title>
     <style>
-        /* Estilos modernistas */
+        /* Estilos modernos */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -46,6 +46,31 @@
             color: #fff;
             border-radius: 0 0 10px 10px;
         }
+        /* Estilos para as seções */
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+        section h2 {
+            font-size: 24px;
+            color: #000; /* Cor preta */
+        }
+        section p {
+            font-size: 16px;
+            color: #333;
+        }
+        section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        section ul li {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
@@ -57,7 +82,7 @@
         <div class="main-content">
             <section id="descricao-projeto">
                 <h2>Descrição do Projeto</h2>
-                <p>Este projeto tem como objetivo realizar uma análise abrangente de criptomoedas listadas no Yahoo Finance. Utilizando técnicas de Web Crawling e Scraping, coletamos dados relevantes e os apresentamos de forma organizada para análise e tomada de decisões de investimento.</p>
+                <p>Este projeto é uma investigação abrangente de todas as criptomoedas listadas no Yahoo! Por meio de web crawling e scraping, colhemos informações relevantes e as apresentamos de forma organizada que permite a análise e a tomada de decisão de investimentos.</p>
             </section>
 
             <section id="mais-informacoes">
@@ -71,15 +96,15 @@
 
             <section id="resultados">
                 <h2>Resultados</h2>
-                <p>Toda a extração foi feita diretamente do site do Yahoo Finance e vocês podem conferir as informações mais valiosas que tirei aqui de todo o processo. 💡</p>
+                <p>Toda a extração foi feita diretamente do site do Yahoo Finance e vocês podem conferir as informações mais valiosas que tirei aqui de todo o processo.</p>
                 <p>Usando uma seleção de bibliotecas cuidadosamente escolhidas como re, BeautifulSoup, Path, matplotlib, pandas, explorei a coleta e análise de informações sobre criptomoedas, além de fazer uma solicitação HTTP para o URL do Yahoo Finance para obter dados atualizados sobre criptomoedas.</p>
                 <p><strong>Tratamento e Análise de Dados:</strong> Usando a biblioteca BeautifulSoup, analisei o conteúdo da página da web e extraí as informações necessárias. Depois disso, formatei os valores e criei um DataFrame usando a biblioteca pandas. Durante minha análise, me aprofundei nas mudanças percentuais positivas do dia de criptomoedas, realizando o filtro para pegar justamente as valorizadas daquele momento.</p>
                 <p><strong>Conclusões da Análise:</strong> Durante minha investigação, me deparei com informações bem interessantes:</p>
-                <ol>
+                <ul>
                     <li>Diversidade de Desempenho: Criptomoedas com diferentes valores de mercado apresentaram mudanças percentuais positivas. Isso sugere que o desempenho não é estritamente dependente do valor de mercado, proporcionando oportunidades para diversos investidores.</li>
                     <li>Oportunidades de Investimento: Muitas criptomoedas, independentemente do valor de mercado, demonstraram potencial para mudanças percentuais positivas. Isso pode ser uma oportunidade intrigante para investidores em busca de ativos promissores.</li>
                     <li>Abordagem Estratégica: A análise ressalta a importância da diversificação em um mercado volátil. Investidores podem considerar criptomoedas com diferentes valores de mercado para mitigar riscos.</li>
-                </ol>
+                </ul>
                 <!-- Link para a imagem do Google Drive -->
                 <p>Para visualizar uma imagem relacionada a este projeto, <a href="https://drive.google.com/file/d/1YHQpqYJCojmHnPmNumb_cz5N7g-qTKB-/view?usp=drive_link" target="_blank">clique aqui</a>.</p>
             </section>
